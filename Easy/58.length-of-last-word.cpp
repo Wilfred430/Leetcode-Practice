@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+#include<sstream>
+#include<cstring>
 class Solution {
 public:
     int lengthOfLastWord(string s) {

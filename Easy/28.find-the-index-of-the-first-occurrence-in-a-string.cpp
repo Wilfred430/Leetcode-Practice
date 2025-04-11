@@ -5,12 +5,14 @@
  */
 
 // @lc code=start
+#include<cstring>
+
 class Solution {
 public:
     int strStr(string haystack, string needle) {
         
         size_t pos =  haystack.find(needle);
-        if(pos == string::npos)
+        if(pos == haystack.npos)
         {
             return -1;
         }else
