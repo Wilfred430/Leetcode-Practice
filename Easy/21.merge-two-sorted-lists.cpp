@@ -5,15 +5,23 @@
  */
 
 // @lc code=start
+<<<<<<< HEAD:21.merge-two-sorted-lists.cpp
 /*
 struct ListNode {
+=======
+  struct ListNode {
+>>>>>>> 44992b2ae4ba63e627ed23d11953f5e2955369fb:Easy/21.merge-two-sorted-lists.cpp
       int val;
       ListNode *next;
       ListNode() : val(0), next(nullptr) {}
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
+<<<<<<< HEAD:21.merge-two-sorted-lists.cpp
 */
+=======
+
+>>>>>>> 44992b2ae4ba63e627ed23d11953f5e2955369fb:Easy/21.merge-two-sorted-lists.cpp
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
