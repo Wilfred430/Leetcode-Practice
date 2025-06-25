@@ -5,6 +5,11 @@
  */
 
 // @lc code=start
+#include<iostream>
+#include<sstream>
+#include<stack>
+#include<unordered_map>
+using namespace std;
 class Solution {
 public:
     bool isValid(string s) {

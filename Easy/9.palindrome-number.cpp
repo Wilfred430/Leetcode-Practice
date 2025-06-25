@@ -3,9 +3,13 @@
  *
  * [9] Palindrome Number
  */
-#include<algorithm>
 
 // @lc code=start
+
+#include<algorithm>
+#include<iostream>
+#include<string>
+using namespace  std;
 class Solution {
 public:
     bool isPalindrome(int x) {

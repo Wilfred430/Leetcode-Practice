@@ -5,6 +5,10 @@
  */
 
 // @lc code=start
+#include<iostream>
+#include<vector>
+#include<map>
+using namespace std;
 class Solution
 {
 public:
