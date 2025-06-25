@@ -5,7 +5,10 @@
  */
 
 // @lc code=start
-
+#include<iostream>
+#include<string>
+#include<sstream>
+using namespace std;
 class Solution
 {
 public:
@@ -13,9 +16,7 @@ public:
     {
         stringstream ss(s);
         string tmp;
-        while (ss >> tmp)
-        {
-        }
+        while (ss >> tmp) {}
         return tmp.length();
     }
 };
