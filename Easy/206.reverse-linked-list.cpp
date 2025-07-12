@@ -47,5 +47,21 @@ public:
 
         return head2;
     }
+
+    ListNode *reverseList(ListNode *head)
+    {
+        ListNode *prev = nullptr;
+        ListNode *cur = head;
+
+        while (cur)
+        {
+            ListNode *tmp = cur->next;
+            cur->next = prev;
+            prev = cur;
+            cur = tmp;
+        }
+
+        return prev;
+    }
 };
 // @lc code=end
