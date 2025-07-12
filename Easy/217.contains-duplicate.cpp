@@ -7,13 +7,13 @@
 // @lc code=start
 #include<iostream>
 #include<vector>
-#include<set>
+#include<unordered_set>
 using namespace std;
 
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        set<int> s;
+        unordered_set<int> s;
         for(auto it : nums)
         {
             if(s.find(it) != s.end()) return true;
