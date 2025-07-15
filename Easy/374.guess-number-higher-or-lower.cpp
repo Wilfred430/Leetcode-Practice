@@ -16,12 +16,23 @@
 #include <iostream>
 using namespace std;
 
+int pick = 6; // 假設要猜的數字
+
+int guess(int num)
+{
+    if (num > pick)
+        return -1;
+    if (num < pick)
+        return 1;
+    return 0;
+}
+
 class Solution
 {
 public:
     int guessNumber(int n)
     {
-        int left = 0, right = n;
+        int left = 1, right = n;
         while (left <= right)
         {
             int mid = left + (right - left) / 2;
@@ -31,9 +42,8 @@ public:
             else if (result > 0)
                 left = mid + 1;
             else
-                right = mid;
+                right = mid - 1;
         }
-
         return -1;
     }
 };
