@@ -5,42 +5,60 @@
  */
 
 // @lc code=start
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+
+// Definition for a binary tree node.
+
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 
 class Solution
 {
-    vector<int> data;
+    int count = 0;
+    int record;
 
 public:
     int kthSmallest(TreeNode *root, int k)
     {
-        Traversal(root);
-        sort(data.begin(), data.end());
-        return data[k - 1];
+        // Traversal(root);
+        // sort(data.begin(), data.end());
+        // return data[k - 1];
+        int result = 0;
+        this->record = k;
+        Inorder(root, result);
+        return result;
     }
-    void Traversal(TreeNode *root)
+    // void Traversal(TreeNode *root)
+    // {
+    //     if (root)
+    //         data.push_back(root->val);
+    //     else
+    //         return;
+
+    //     Traversal(root->left);
+    //     Traversal(root->right);
+    // }
+
+    void Inorder(TreeNode *root, int &result)
     {
-        if (root)
-            data.push_back(root->val);
-        else
+        if (!root)
             return;
 
-        Traversal(root->left);
-        Traversal(root->right);
+        Inorder(root->left, result);
+        this->count++;
+        if (this->record == count)
+            result = root->val;
+        Inorder(root->right, result);
     }
 };
 // @lc code=end
