@@ -13,35 +13,61 @@ using namespace std;
 class Solution
 {
 public:
+    // int majorityElement(vector<int> &nums)
+    // {
+    //     sort(nums.begin(), nums.end());
+    //     int Max = 0;
+    //     int count = 1;
+    //     int result = nums[0];
+    //     for (int i = 1; i < nums.size(); ++i)
+    //     {
+    //         if (nums[i] != nums[i - 1])
+    //         {
+    //             if (count > Max)
+    //             {
+    //                 Max = count;
+    //                 result = nums[i - 1];
+    //             }
+    //             count = 1;
+    //         }
+    //         else
+    //         {
+    //             ++count;
+    //         }
+    //     }
+
+    //     if (count > Max)
+    //     {
+    //         result = nums[nums.size()-1];
+    //     }
+
+    //     return result;
+    // }
     int majorityElement(vector<int> &nums)
     {
-        sort(nums.begin(), nums.end());
-        int Max = 0;
+        int candidate = nums[0];
         int count = 1;
-        int result = nums[0];
+
         for (int i = 1; i < nums.size(); ++i)
         {
-            if (nums[i] != nums[i - 1])
+            if (count == 0)
             {
-                if (count > Max)
-                {
-                    Max = count;
-                    result = nums[i - 1];
-                }
+                candidate = nums[i];
                 count = 1;
             }
-            else
+            else if (nums[i] == candidate)
             {
                 ++count;
             }
+            else
+            {
+                --count;
+            }
         }
 
-        if (count > Max)
-        {
-            result = nums[nums.size()-1];
-        }
-
-        return result;
+        return candidate;
     }
+
 };
-// @lc code=end
+
+    // @lc code=end
