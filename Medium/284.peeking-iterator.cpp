@@ -5,48 +5,72 @@
  */
 
 // @lc code=start
-/*
- * Below is the interface for Iterator, which is already defined for you.
- * **DO NOT** modify the interface for Iterator.
- *
- *  class Iterator {
- *		struct Data;
- * 		Data* data;
- *  public:
- *		Iterator(const vector<int>& nums);
- * 		Iterator(const Iterator& iter);
- *
- * 		// Returns the next element in the iteration.
- *		int next();
- *
- *		// Returns true if the iteration has more elements.
- *		bool hasNext() const;
- *	};
- */
+#include <iostream>
+#include <vector>
+using namespace std;
 
-class PeekingIterator : public Iterator {
+// Below is the interface for Iterator, which is already defined for you.
+// **DO NOT** modify the interface for Iterator.
+
+class Iterator
+{
+	struct Data;
+	Data *data;
+
 public:
-	PeekingIterator(const vector<int>& nums) : Iterator(nums) {
-	    // Initialize any member here.
-	    // **DO NOT** save a copy of nums and manipulate it directly.
-	    // You should only use the Iterator interface methods.
-	    
+	Iterator(const vector<int> &nums);
+	Iterator(const Iterator &iter);
+	// Returns the next element in the iteration.
+	int next();
+	// Returns true if the iteration has more elements.
+	bool hasNext() const;
+};
+
+class PeekingIterator : public Iterator
+{
+	int val;
+	bool intnext;
+
+public:
+	PeekingIterator(const vector<int> &nums) : Iterator(nums)
+	{
+		// Initialize any member here.
+		// **DO NOT** save a copy of nums and manipulate it directly.
+		// You should only use the Iterator interface methods.
+		if (Iterator::hasNext())
+		{
+			intnext = true;
+			val = Iterator::next();
+		}
+		else
+			intnext = false;
 	}
-	
-    // Returns the next element in the iteration without advancing the iterator.
-	int peek() {
-        
+
+	// Returns the next element in the iteration without advancing the iterator.
+	int peek()
+	{
+		return this->val;
 	}
-	
+
 	// hasNext() and next() should behave the same as in the Iterator interface.
 	// Override them if needed.
-	int next() {
-	    
+	int next()
+	{
+		int cur = val;
+		if (Iterator::hasNext())
+		{
+			intnext = true;
+			val = Iterator::next();
+		}
+		else
+			intnext = false;
+
+		return cur;
 	}
-	
-	bool hasNext() const {
-	    
+
+	bool hasNext() const
+	{
+		return intnext;
 	}
 };
 // @lc code=end
-
