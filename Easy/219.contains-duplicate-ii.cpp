@@ -8,7 +8,8 @@
 #include <iostream>
 #include <vector>
 // #include <cmath>
-#include<unordered_set>
+#include <unordered_set>
+#include <unordered_map>
 using namespace std;
 
 class Solution
@@ -33,17 +34,33 @@ public:
 
         // return false;
 
-        unordered_set<int> window;
+        // unordered_set<int> window;
 
-        for(int i=0;i<nums.size();++i)
+        // for(int i=0;i<nums.size();++i)
+        // {
+        //     if(window.count(nums[i])) return true;
+
+        //     window.insert(nums[i]);
+
+        //     if(window.size()>k) window.erase(nums[i-k]);
+        // }
+
+        // return false;
+
+        unordered_map<int, int> m;
+
+        for (int i = 0; i < nums.size(); ++i)
         {
-            if(window.count(nums[i])) return true;
-
-            window.insert(nums[i]);
-
-            if(window.size()>k) window.erase(nums[i-k]);
+            if (!m.count(nums[i]))
+                m[nums[i]] = i;
+            else
+            {
+                if (i - m[nums[i]] <= k)
+                    return true;
+                else
+                    m[nums[i]] = i;
+            }
         }
-
 
         return false;
     }
