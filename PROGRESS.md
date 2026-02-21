@@ -1,25 +1,25 @@
 ﻿# LeetCode Progress Tracker
 
-Updated: 2026-02-21 15:54:45
+Updated: 2026-02-21 23:01:31
 
 ## Overview
 
-- Solved: **112**
+- Solved: **113**
 - Unfinished: **10**
-- Total: **122**
-- Completion Rate: **91.8%**
+- Total: **123**
+- Completion Rate: **91.87%**
 
 ## By Difficulty
 
 | Easy | Medium | Hard | Unfinished |
 |---:|---:|---:|---:|
-| 80 | 31 | 1 | 10 |
+| 80 | 32 | 1 | 10 |
 
 ## By Tag
 
 | Tag | Easy | Medium | Hard | Unfinished | Solved | Total |
 |---|---:|---:|---:|---:|---:|---:|
-| array | 23 | 15 | 1 | 2 | 39 | 41 |
+| array | 23 | 16 | 1 | 2 | 40 | 42 |
 | string | 12 | 2 | 0 | 3 | 14 | 17 |
 | math | 13 | 3 | 0 | 0 | 16 | 16 |
 | hash-table | 7 | 4 | 0 | 2 | 11 | 13 |

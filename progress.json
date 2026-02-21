@@ -1,24 +1,24 @@
 ﻿{
-    "generatedAt":  "2026-02-21T15:54:45.0000871+08:00",
+    "generatedAt":  "2026-02-21T23:01:31.8978729+08:00",
     "workspace":  "Leetcode Practice",
     "totals":  {
                    "easy":  80,
-                   "medium":  31,
+                   "medium":  32,
                    "hard":  1,
                    "unfinished":  10,
-                   "solved":  112,
-                   "total":  122
+                   "solved":  113,
+                   "total":  123
                },
-    "completionRate":  91.8,
+    "completionRate":  91.87,
     "byTag":  [
                   {
                       "tag":  "array",
                       "easy":  23,
-                      "medium":  15,
+                      "medium":  16,
                       "hard":  1,
                       "unfinished":  2,
-                      "solved":  39,
-                      "total":  41
+                      "solved":  40,
+                      "total":  42
                   },
                   {
                       "tag":  "backtracking",
