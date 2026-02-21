@@ -5,22 +5,22 @@
  */
 
 // @lc code=start
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-    vector<int> getConcatenation(vector<int>& nums) {
-        
+    vector<int> getConcatenation(vector<int> &nums)
+    {
         int len = nums.size();
-        for(int i=0;i<len;++i)
+        for (int i = 0; i < len; ++i)
         {
             nums.push_back(nums[i]);
         }
-        
+
         return nums;
     }
 };
 // @lc code=end
-

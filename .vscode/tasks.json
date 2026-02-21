@@ -22,6 +22,68 @@
                 "isDefault": true
             },
             "detail": "偵錯工具產生的工作。"
+        },
+        {
+            "label": "Progress: 更新統計報表",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\update-progress.ps1",
+                "-RootPath",
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Progress: 即時監看更新",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\watch-progress.ps1",
+                "-RootPath",
+                "${workspaceFolder}"
+            ],
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
+            "label": "Progress: 更新並自動提交",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\commit-progress.ps1",
+                "-RootPath",
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Progress: 更新提交並推送",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}\\scripts\\commit-progress.ps1",
+                "-RootPath",
+                "${workspaceFolder}",
+                "-Push"
+            ],
+            "problemMatcher": []
         }
     ],
     "version": "2.0.0"
