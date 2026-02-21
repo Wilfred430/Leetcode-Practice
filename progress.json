@@ -1,0 +1,141 @@
+﻿{
+    "generatedAt":  "2026-02-21T15:47:06.2072385+08:00",
+    "workspace":  "Leetcode Practice",
+    "totals":  {
+                   "easy":  80,
+                   "medium":  31,
+                   "hard":  1,
+                   "unfinished":  10,
+                   "solved":  112,
+                   "total":  122
+               },
+    "completionRate":  91.8,
+    "byTag":  [
+                  {
+                      "tag":  "array",
+                      "easy":  23,
+                      "medium":  15,
+                      "hard":  1,
+                      "unfinished":  2,
+                      "solved":  39,
+                      "total":  41
+                  },
+                  {
+                      "tag":  "backtracking",
+                      "easy":  1,
+                      "medium":  0,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  1,
+                      "total":  1
+                  },
+                  {
+                      "tag":  "binary-search",
+                      "easy":  1,
+                      "medium":  0,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  1,
+                      "total":  1
+                  },
+                  {
+                      "tag":  "depth-first-search",
+                      "easy":  0,
+                      "medium":  0,
+                      "hard":  0,
+                      "unfinished":  1,
+                      "solved":  0,
+                      "total":  1
+                  },
+                  {
+                      "tag":  "divide-and-conquer",
+                      "easy":  2,
+                      "medium":  0,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  2,
+                      "total":  2
+                  },
+                  {
+                      "tag":  "hash-table",
+                      "easy":  7,
+                      "medium":  4,
+                      "hard":  0,
+                      "unfinished":  2,
+                      "solved":  11,
+                      "total":  13
+                  },
+                  {
+                      "tag":  "linked-list",
+                      "easy":  4,
+                      "medium":  2,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  6,
+                      "total":  6
+                  },
+                  {
+                      "tag":  "math",
+                      "easy":  13,
+                      "medium":  3,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  16,
+                      "total":  16
+                  },
+                  {
+                      "tag":  "shell",
+                      "easy":  1,
+                      "medium":  0,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  1,
+                      "total":  1
+                  },
+                  {
+                      "tag":  "stack",
+                      "easy":  3,
+                      "medium":  1,
+                      "hard":  0,
+                      "unfinished":  1,
+                      "solved":  4,
+                      "total":  5
+                  },
+                  {
+                      "tag":  "string",
+                      "easy":  12,
+                      "medium":  2,
+                      "hard":  0,
+                      "unfinished":  3,
+                      "solved":  14,
+                      "total":  17
+                  },
+                  {
+                      "tag":  "tree",
+                      "easy":  8,
+                      "medium":  1,
+                      "hard":  0,
+                      "unfinished":  1,
+                      "solved":  9,
+                      "total":  10
+                  },
+                  {
+                      "tag":  "two-pointers",
+                      "easy":  4,
+                      "medium":  1,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  5,
+                      "total":  5
+                  },
+                  {
+                      "tag":  "uncategorized",
+                      "easy":  1,
+                      "medium":  2,
+                      "hard":  0,
+                      "unfinished":  0,
+                      "solved":  3,
+                      "total":  3
+                  }
+              ]
+}
