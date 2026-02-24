@@ -20,19 +20,17 @@ public:
             return false;
 
         int target = total / 3;
-        int sum = 0, count = 0;
-
-        for (int i = 0; i < arr.size(); i++)
+        int count = 0, sum = 0;
+        for (int i = 0; i < arr.size(); ++i)
         {
             sum += arr[i];
             if (sum == target)
             {
-                count++;
+                ++count;
                 sum = 0;
             }
         }
 
-        // 至少要找到三段
         return count >= 3;
     }
 };
