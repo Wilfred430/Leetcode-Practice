@@ -25,6 +25,11 @@ public:
         }
 
         return false;
+
+        // if (s.length() != goal.length())
+        //     return false;
+        // string doubled = s + s;
+        // return doubled.find(goal) != string::npos;
     }
 };
 // @lc code=end
